@@ -16,12 +16,13 @@ module.exports = {
     filename: 'js/[name].[hash:8].js',
     // 生成chunk名称
     chunkFilename: 'js/[name].[hash:8].js',
-    // 资源引用路径
-    publicPath: './'
+    // 资源引用路径  这里在dev时一定要注释，否则加载不出来网页！！！
+    // publicPath: './'
   },
+  target: 'web',
   devServer: {
     hot: true,
-    port: 3000,
+    port: 8080,
     contentBase: './dist'
   },
   resolve: {

@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "webpack serve --config ./build/webpack.dev.js",
+    "serve": "webpack serve --progress --config ./build/webpack.dev.js",
     "build": "webpack --config ./build/webpack.prod.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@intervolga/optimize-cssnano-plugin": "^1.0.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@intervolga/optimize-cssnano-plugin": "^1.0.5",
     "autoprefixer": "^10.2.5",
     "cache-loader": "^4.1.0",
     "clean-webpack-plugin": "*",
@@ -20,15 +21,17 @@
     "dart-sass": "^1.25.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
-    "mini-css-extract-plugin": "^1.6.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "node-sass": "^6.0.0",
     "postcss-loader": "^5.3.0",
     "sass-loader": "^11.1.1",
     "style-loader": "^2.0.0",
     "thread-loader": "^3.0.4",
     "url-loader": "^4.1.1",
-    "vue-loader": "^15.9.7",
+    "vue-loader": "^15.9.2",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^5.37.0",
+    "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
@@ -39,6 +42,8 @@
     "@babel/runtime-corejs2": "^7.14.0",
     "babel-loader": "^8.2.2",
     "core-js": "^2.6.12",
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2"
   }
 }
